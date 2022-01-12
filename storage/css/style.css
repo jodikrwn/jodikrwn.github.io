@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: #262434;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.navbar.fixed-top{
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .5);
+}
+
+.navbar.fixed-top .navbar-brand img{
+    width: 75px;
+}
+
+.navbar .navbar-toggler{
+    place-content: center;
+    padding: 10px;
+    box-shadow: none !important;
+}
+
+.navbar .navbar-toggler-icon{
+    color: white;
+    background-image: none !important;
+    font-size: 40px;
+    height: auto;
+}
+
+.navbar-brand img {
+    width: 105px;
+    transition: .5s ease-in-out;
+}
+
+.navbar .navbar-collapse{
+    justify-content: end;
+}
+
+.navbar .navbar-collapse .navbar-nav{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link{
+    color: white;
+    transition: none !important;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link.active{
+    border-bottom: 2px solid #EA8D11 !important;
+    color: white;
+}
+
+.navbar .navbar-collapse .navbar-nav .CV{
+    font-weight: bold;
+    color: #EA8D11;
+}
+
+
+/* START PAGINATION BUTTON */
+.pagination{
+    background-color: none !important;
+    position: fixed;
+    display: inline-block !important;
+    right: 0;
+    top: 50%;
+    transform: translate(-80%, -50%);
+    z-index: 99;
+}
+
+.pagination .page-link{
+    background-color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50% !important;
+    margin-bottom: 5px;
+    border: none !important;
+}
+
+.pagination .page-link.active{
+    background-color: #EA8D11 !important;
+}
+
+
+/* START HOME */
+.home{
+    height: auto;
+    background-color: #262434;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.home .container{
+    height: 100%;
+}
+
+.home .row{
+    height: 100%;
+    display: flex;
+}
+
+.home .col-md{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.home h1{
+    font-size: 55px;
+}
+
+.home .col-md > :only-child{
+    margin-top: -20px !important;
+}
+
+.home .col-md.profil{
+    align-items: center;
+}
+
+.home .name{
+    font-weight: bold;
+}
+
+.home .status{
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+.home .sosmed-icon{
+    margin-top: 30px;
+}
+
+.home .sosmed-icon a{
+    text-decoration: none;
+}
+
+.home .sosmed-icon img{
+    width: 35px;
+    margin: 2px;
+}
+
+.home .sosmed-icon img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.home img.profil{
+    width: 370px;
+}
+
+
+
+/* START ABOUT */
+.about{
+    background-color: #333444;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.about .container{
+    padding: 50px 0;
+}
+
+.about img{
+    width: 75%;
+}
+
+.about .about-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about p{
+    font-size: 22px;
+    color: white;
+    text-align: justify;
+}
+
+
+/* START SKILL */
+.skill{
+    background-color: #262434;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.skill .container{
+    padding: 50px 0 100px 0;
+}
+
+
+.skill .row{
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.skill .card{
+    background-color: #333444;
+    color: white;
+    min-height: 300px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill .card img{
+    width: 90%;
+}
+
+.skill .card-title{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.skill .countdown{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 50px auto 10px auto;
+}
+
+.skill .countdown h4{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.skill .countdown .container{
+    place-content: center;
+    padding: 0;
+}
+
+.skill .countdown .box{
+    margin: 10px;
+}
+
+.skill .countdown .box p:not(:nth-child(1)){
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* START FOOTER */
+.footer{
+    background-color: #333444;
+    height: auto;
+}
+
+.footer .container{
+    padding: 20px 0;
+}
+
+.footer .card{
+    margin: auto;
+    background: none;
+    color: white;
+    align-items: center;
+}
+
+.footer .card .logo-img{
+    width: 35%;
+}
+
+.footer .card .love-img{
+    width: 20px;
+    margin: 0 5px;
+}
+
+.footer .card p{
+    text-align: center !important;
+    margin: 0;
+}
+
+
+
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h1{
+    border-bottom: 5px solid #EA8D11;
+    display: inline-block;
+    margin: 0;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* START RESPONSIVE BREAKPOINT */
+
+ /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+ }
+
+ /* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .home .col-md.profil{
+        order: -1 !important;
+    }
+    
+    .home .col-md {
+        text-align: center;
+        align-items: center;
+    }
+
+    .about p{
+        text-align: center;
+    }
+
+    .home .container{
+        padding: 50px 20px 100px 20px;
+        box-sizing: border-box;
+    }
+
+    .about .container{
+        padding: 50px 20px 100px 20px;
+        box-sizing: border-box;
+    }
+
+    .skill .container{
+        padding: 50px 20px 100px 20px;
+         /* padding: 50px 0 100px 0; */
+        box-sizing: border-box;
+    }
+
+ }
+
+ /* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+    .navbar{
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, .5);
+        background-color: #262434;
+    }
+
+    .navbar .navbar-collapse .navbar-nav{
+        width: fit-content;
+    }
+
+    .navbar .navbar-collapse .navbar-nav .nav-link.active{
+        border: none !important;
+        color: #EA8D11;
+    }
+
+    .home .container{
+        padding-bottom: 80px;
+    }
+
+    .home .col-md > :only-child{
+        margin-top: 10px !important;
+    }
+
+ }
+
+ /* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+ }
+
+ /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+
+ }
