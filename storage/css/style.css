@@ -43,6 +43,7 @@
 .navbar .navbar-collapse .navbar-nav{
     width: 35%;
     display: flex;
+    display: -webkit-flex; /* Safari */
     justify-content: space-between;
     font-size: 25px;
 }
@@ -103,10 +104,12 @@
 .home .row{
     height: 100%;
     display: flex;
+    display: -webkit-flex; /* Safari */
 }
 
 .home .col-md{
     display: flex;
+    display: -webkit-flex; /* Safari */
     flex-direction: column;
     justify-content: center;
     color: white;
@@ -175,6 +178,7 @@
 
 .about .about-col{
     display: flex;
+    display: -webkit-flex; /* Safari */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -310,6 +314,7 @@
 @media (max-width: 767.98px) { 
     .home .col-md.profil{
         order: -1 !important;
+        -webkit-order: -1 !important;
     }
     
     .home .col-md {
@@ -333,7 +338,6 @@
 
     .skill .container{
         padding: 50px 20px 100px 20px;
-         /* padding: 50px 0 100px 0; */
         box-sizing: border-box;
     }
 
